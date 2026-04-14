@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./variables/variable.css">
+    <script type="module" src="./mainWeather.js" defer></script>
+    <script type="module" src="./dist/animation.js"></script>
+    <script type="module" src="./dist/getApi.js"></script>
+</head>
+<body>
+    <main>
+        <div class="weatherUI">
+            <div class="weatherInput">
+                <input type="text" id="searchbar">
+                <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            </div>
+            
+    
+            <div class="weatherForeacast">
+                <div class="weatherNotFound hidden">
+                    <i class="fa-solid fa-ban"></i>
+                    <p>A megadott település<br>nem található!</p>
+                </div>
+                <div class="weatherFound active-fx">
+                    <img src="" alt="" id="weatherType">
+                    <!-- <i class="fa-solid fa-sun weather_type" style="color: #FFD43B;"></i> -->
+                    <p class="temperature"></p>
+                    <p class="location"></p>
+                </div>
+                
+
+            </div>
+        </div>
+        
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/f17ac2bc1e.js" crossorigin="anonymous"></script>
+</body>
+</html>

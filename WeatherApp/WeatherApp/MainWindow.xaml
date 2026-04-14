@@ -1,0 +1,92 @@
+﻿<Window x:Class="WeatherApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Időjárás applikáció" Height="600" Width="400"
+        WindowStartupLocation="CenterScreen"
+        Foreground="White" FontFamily="Segoe UI" WindowStyle="ToolWindow">
+
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#141E30" Offset="0.0" />
+            <GradientStop Color="#243B55" Offset="1.0" />
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" CornerRadius="20" Background="#33FFFFFF" Margin="0,0,0,20" Padding="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="CityTextBox" Grid.Column="0" Height="35" FontSize="16"
+                         VerticalContentAlignment="Center" Padding="15,0"
+                         Background="Transparent" Foreground="White" BorderThickness="0"
+                         Text="Budapest" />
+                <Button Grid.Column="1" Content="Keresés" Width="90" Height="35"
+                        Background="#3498DB" Foreground="White" BorderThickness="0"
+                        FontSize="14" FontWeight="Bold" Cursor="Hand"
+                        Click="GetWeather_Click">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="15" />
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock x:Name="CityText" Text="Város" FontSize="40" FontWeight="Bold" HorizontalAlignment="Center"
+                       Margin="0,0,0,5" />
+            <TextBlock x:Name="DescText" Text="Kérlek keress rá egy városra!" FontSize="20" Foreground="#A9CCE3"
+                       HorizontalAlignment="Center" Margin="0,0,0,10" />
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+                <Image x:Name="WeatherIcon" Width="100" Height="100" Margin="0,0,10,0" />
+                <TextBlock x:Name="TempText" Text="--" FontSize="72" FontWeight="Light" VerticalAlignment="Center" />
+                <TextBlock Text="°C" FontSize="30" Foreground="#E74C3C" VerticalAlignment="Top" Margin="5,15,0,0" />
+            </StackPanel>
+
+            <TextBlock x:Name="MinMaxText" Text="Min: -- °C | Max: -- °C" FontSize="16" Foreground="#BDC3C7"
+                       HorizontalAlignment="Center" />
+        </StackPanel>
+
+        <Border Grid.Row="2" Background="#22FFFFFF" CornerRadius="15" Padding="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Column="0" Grid.Row="0" Margin="0,0,0,15">
+                    <TextBlock Text="Hőérzet" FontSize="12" Foreground="#A9CCE3" />
+                    <TextBlock x:Name="FeelsLikeText" Text="-- °C" FontSize="18" FontWeight="SemiBold" />
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="1">
+                    <TextBlock Text="Páratartalom" FontSize="12" Foreground="#A9CCE3" />
+                    <TextBlock x:Name="HumidityText" Text="-- %" FontSize="18" FontWeight="SemiBold" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Grid.Row="0" Margin="0,0,0,15">
+                    <TextBlock Text="Szélsebesség" FontSize="12" Foreground="#A9CCE3" />
+                    <TextBlock x:Name="WindText" Text="-- km/h" FontSize="18" FontWeight="SemiBold" />
+                </StackPanel>
+                <StackPanel Grid.Column="1" Grid.Row="1">
+                    <TextBlock Text="Légnyomás" FontSize="12" Foreground="#A9CCE3" />
+                    <TextBlock x:Name="PressureText" Text="-- hPa" FontSize="18" FontWeight="SemiBold" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

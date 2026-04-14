@@ -1,0 +1,14 @@
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\bin\Debug\net10.0\WeatherApp_console.exe
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\bin\Debug\net10.0\WeatherApp_console.deps.json
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\bin\Debug\net10.0\WeatherApp_console.runtimeconfig.json
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\bin\Debug\net10.0\WeatherApp_console.dll
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\bin\Debug\net10.0\WeatherApp_console.pdb
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\WeatherApp_console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\WeatherApp_console.AssemblyInfoInputs.cache
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\WeatherApp_console.AssemblyInfo.cs
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\WeatherApp_console.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\WeatherApp_console.dll
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\refint\WeatherApp_console.dll
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\WeatherApp_console.pdb
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\WeatherApp_console.genruntimeconfig.cache
+C:\Users\User\Documents\suli\c#\WeatherApp_console\WeatherApp_console\obj\Debug\net10.0\ref\WeatherApp_console.dll

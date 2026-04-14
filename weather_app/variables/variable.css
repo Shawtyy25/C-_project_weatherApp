@@ -1,0 +1,11 @@
+.active{
+    display: block;
+}
+
+.active-fx{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
