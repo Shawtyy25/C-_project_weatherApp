@@ -10,7 +10,7 @@ body{
     background-image: linear-gradient(rgb(151, 194, 211), rgb(16, 179, 219));
     font-family: "Kanit", sans-serif;
 }
-    
+
 
 main{
     display: flex;
@@ -88,7 +88,7 @@ main{
 
 .temperature{
     font-size: 4rem;
-    
+
 }
 
 .location{
